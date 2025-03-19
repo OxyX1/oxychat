@@ -53,7 +53,6 @@
     function sendMessage() {
       const message = messageInput.value;
       if (message) {
-        // Send the channel and message as one string
         socket.send(`${currentChannel} ${message}`);
         messageInput.value = '';
       }
